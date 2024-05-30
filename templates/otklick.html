@@ -1,0 +1,27 @@
+{% extends 'flatpages/default.html' %}
+
+
+
+{% block title %}
+GamePosts_Private
+{% endblock title %}
+
+{% block content %}
+   <h1> Ваши личные объявления: </h1>
+
+    </table>
+
+   <h1> Отклики и текст откликов на ваши объявления: </h1>
+    <table>
+
+        <tr>
+            {% for x in latest_articles %}
+            {{ x }}
+            {% endfor %}
+
+        </tr>
+
+        
+        
+    </table>
+{% endblock content %}
